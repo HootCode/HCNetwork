@@ -22,6 +22,11 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		CCE091EE1BD683BC00D201A8 /* MapsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE091ED1BD683BC00D201A8 /* MapsClient.m */; settings = {ASSET_TAGS = (); }; };
+		CCE091F11BD6845700D201A8 /* MapsAddressRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE091F01BD6845700D201A8 /* MapsAddressRequest.m */; settings = {ASSET_TAGS = (); }; };
+		CCE091F41BD6847000D201A8 /* MapsAddressResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE091F31BD6847000D201A8 /* MapsAddressResponse.m */; settings = {ASSET_TAGS = (); }; };
+		CCE091F71BD6891E00D201A8 /* MapsClientResources.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE091F61BD6891E00D201A8 /* MapsClientResources.m */; settings = {ASSET_TAGS = (); }; };
+		CCE091FB1BD6944A00D201A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE091FA1BD6944A00D201A8 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		EE4392F11132534BB4F2005E /* libPods-LibSpirNetworking_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EAE74EE5B42A7253A26FC47 /* libPods-LibSpirNetworking_Example.a */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +46,7 @@
 		2E56150A452F4528C6403262 /* Pods-LibSpirNetworking_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibSpirNetworking_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LibSpirNetworking_Example/Pods-LibSpirNetworking_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5D138618335B9D761D0614B0 /* Pods-LibSpirNetworking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibSpirNetworking_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LibSpirNetworking_Example/Pods-LibSpirNetworking_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5DF66ABAB06952BC9E1FF6E9 /* Pods-LibSpirNetworking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibSpirNetworking_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LibSpirNetworking_Tests/Pods-LibSpirNetworking_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* LibSpirNetworking_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LibSpirNetworking_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* SPNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -65,6 +70,15 @@
 		B45352F8B4E879CC4510D7E5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		BA817158845BED1131822A6D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C63CD85024E4B3F5D46F000B /* libPods-LibSpirNetworking_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LibSpirNetworking_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE091EC1BD683BC00D201A8 /* MapsClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapsClient.h; sourceTree = "<group>"; };
+		CCE091ED1BD683BC00D201A8 /* MapsClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapsClient.m; sourceTree = "<group>"; };
+		CCE091EF1BD6845700D201A8 /* MapsAddressRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapsAddressRequest.h; sourceTree = "<group>"; };
+		CCE091F01BD6845700D201A8 /* MapsAddressRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapsAddressRequest.m; sourceTree = "<group>"; };
+		CCE091F21BD6847000D201A8 /* MapsAddressResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapsAddressResponse.h; sourceTree = "<group>"; };
+		CCE091F31BD6847000D201A8 /* MapsAddressResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapsAddressResponse.m; sourceTree = "<group>"; };
+		CCE091F51BD6891E00D201A8 /* MapsClientResources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapsClientResources.h; sourceTree = "<group>"; };
+		CCE091F61BD6891E00D201A8 /* MapsClientResources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapsClientResources.m; sourceTree = "<group>"; };
+		CCE091FA1BD6944A00D201A8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +133,7 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* LibSpirNetworking_Example.app */,
+				6003F58A195388D20070C39A /* SPNetworking.app */,
 				6003F5AE195388D20070C39A /* LibSpirNetworking_Tests.xctest */,
 			);
 			name = Products;
@@ -142,10 +156,12 @@
 			isa = PBXGroup;
 			children = (
 				6003F59C195388D20070C39A /* SPNAppDelegate.h */,
+				CCE091FA1BD6944A00D201A8 /* LaunchScreen.storyboard */,
 				6003F59D195388D20070C39A /* SPNAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* SPNViewController.h */,
 				6003F5A6195388D20070C39A /* SPNViewController.m */,
+				CCE091E41BD67FEC00D201A8 /* UsageExample */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -193,6 +209,45 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		CCE091E41BD67FEC00D201A8 /* UsageExample */ = {
+			isa = PBXGroup;
+			children = (
+				CCE091E51BD6800A00D201A8 /* Client */,
+				CCE091E61BD6800A00D201A8 /* Requests */,
+				CCE091E71BD6800A00D201A8 /* Responses */,
+			);
+			path = UsageExample;
+			sourceTree = "<group>";
+		};
+		CCE091E51BD6800A00D201A8 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				CCE091EC1BD683BC00D201A8 /* MapsClient.h */,
+				CCE091ED1BD683BC00D201A8 /* MapsClient.m */,
+				CCE091F51BD6891E00D201A8 /* MapsClientResources.h */,
+				CCE091F61BD6891E00D201A8 /* MapsClientResources.m */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		CCE091E61BD6800A00D201A8 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				CCE091EF1BD6845700D201A8 /* MapsAddressRequest.h */,
+				CCE091F01BD6845700D201A8 /* MapsAddressRequest.m */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		CCE091E71BD6800A00D201A8 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				CCE091F21BD6847000D201A8 /* MapsAddressResponse.h */,
+				CCE091F31BD6847000D201A8 /* MapsAddressResponse.m */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -213,7 +268,7 @@
 			);
 			name = LibSpirNetworking_Example;
 			productName = LibSpirNetworking;
-			productReference = 6003F58A195388D20070C39A /* LibSpirNetworking_Example.app */;
+			productReference = 6003F58A195388D20070C39A /* SPNetworking.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* LibSpirNetworking_Tests */ = {
@@ -277,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				CCE091FB1BD6944A00D201A8 /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -390,9 +446,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCE091F41BD6847000D201A8 /* MapsAddressResponse.m in Sources */,
+				CCE091F11BD6845700D201A8 /* MapsAddressRequest.m in Sources */,
 				6003F59E195388D20070C39A /* SPNAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* SPNViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				CCE091EE1BD683BC00D201A8 /* MapsClient.m in Sources */,
+				CCE091F71BD6891E00D201A8 /* MapsClientResources.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,9 +576,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LibSpirNetworking/LibSpirNetworking-Prefix.pch";
 				INFOPLIST_FILE = "LibSpirNetworking/LibSpirNetworking-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.juliengdt.LibSpirNetworking-Example";
+				PRODUCT_NAME = SPNetworking;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -532,9 +594,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LibSpirNetworking/LibSpirNetworking-Prefix.pch";
 				INFOPLIST_FILE = "LibSpirNetworking/LibSpirNetworking-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.juliengdt.LibSpirNetworking-Example";
+				PRODUCT_NAME = SPNetworking;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

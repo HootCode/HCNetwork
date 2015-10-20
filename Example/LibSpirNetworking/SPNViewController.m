@@ -8,6 +8,8 @@
 
 #import "SPNViewController.h"
 
+#import "MapsClient.h"
+
 @interface SPNViewController ()
 
 @end
@@ -24,6 +26,19 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)sendRequest:(id)sender {
+    [self getResultForAddress];
+}
+
+#pragma mark - User Interactions -
+- (void) getResultForAddress {
+    [MapsClient resultsForAddress:@"Paris - FRANCE" WithBlock:^(MapsAddressResponse *response, SPNError *error) {
+        
+        
+        
+    }];
 }
 
 @end

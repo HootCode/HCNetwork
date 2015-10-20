@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="ukl-3A-2za">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--LaunchScreen-->
+        <scene sceneID="DJI-mV-AS8">
+            <objects>
+                <viewController title="LaunchScreen" id="ukl-3A-2za" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oYp-fO-WTA"/>
+                        <viewControllerLayoutGuide type="bottom" id="fWr-1X-RrR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xDJ-Qd-Swm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="3PR-vo-MnO">
+                                <rect key="frame" x="100" y="150" width="400" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3PR-vo-MnO" secondAttribute="height" multiplier="4:3" id="cJV-m6-ORy"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3PR-vo-MnO" firstAttribute="leading" secondItem="xDJ-Qd-Swm" secondAttribute="leading" constant="100" id="0r5-AO-MgW"/>
+                            <constraint firstItem="3PR-vo-MnO" firstAttribute="centerX" secondItem="xDJ-Qd-Swm" secondAttribute="centerX" id="HDD-dg-PJi"/>
+                            <constraint firstAttribute="trailing" secondItem="3PR-vo-MnO" secondAttribute="trailing" constant="100" id="Pbg-oy-fTw"/>
+                            <constraint firstItem="3PR-vo-MnO" firstAttribute="centerY" secondItem="xDJ-Qd-Swm" secondAttribute="centerY" id="ogm-Sz-EER"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="de6-0b-w0I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797" y="-15"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="200" height="166"/>
+    </resources>
+</document>
