@@ -12,7 +12,7 @@
 
 
 /**
-   `SPNBaseClient` is a subclass of `AFHTTPRequestOperationManager`. It encapsulate all you need to simply send requests and receive responses, errors or progress state
+   `SPNBaseClient` is a subclass of `AFHTTPRequestOperationManager`. It encapsulates all you need to simply send requests and receive responses, errors or progress state
  */
 @interface SPNBaseClient : AFHTTPRequestOperationManager
 
@@ -22,8 +22,6 @@
  *  @return the shared instance
  */
 + (instancetype)sharedClient;
-
-+ (NSString *)baseURL;
 
 /**
  *  Call this method to save into shared client the given array of cookie

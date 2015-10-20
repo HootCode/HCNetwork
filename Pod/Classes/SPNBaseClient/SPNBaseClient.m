@@ -23,9 +23,9 @@
 	return _sharedClient;
 }
 
-+ (NSString *)baseURL {
-	@throw [NSException exceptionWithName:@"SPNBaseClient Exception"
-	                               reason:[NSString stringWithFormat:@"[%@] - You must override this method.", NSStringFromClass([self class])] userInfo:nil];
+- (NSURL *) baseURL {
+    @throw [NSException exceptionWithName:@"SPNBaseClient Exception"
+                                   reason:[NSString stringWithFormat:@"[%@] - You must override this method.", NSStringFromClass([self class])] userInfo:nil];
 }
 
 #pragma mark - Initializer
