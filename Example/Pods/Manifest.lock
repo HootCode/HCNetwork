@@ -1,0 +1,55 @@
+PODS:
+  - AFNetworking (2.6.1):
+    - AFNetworking/NSURLConnection (= 2.6.1)
+    - AFNetworking/NSURLSession (= 2.6.1)
+    - AFNetworking/Reachability (= 2.6.1)
+    - AFNetworking/Security (= 2.6.1)
+    - AFNetworking/Serialization (= 2.6.1)
+    - AFNetworking/UIKit (= 2.6.1)
+  - AFNetworking/NSURLConnection (2.6.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.1)
+  - AFNetworking/Security (2.6.1)
+  - AFNetworking/Serialization (2.6.1)
+  - AFNetworking/UIKit (2.6.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - JSONModel (1.1.2)
+  - LibSpirNetworking (0.1.0)
+  - OHHTTPStubs (4.3.0):
+    - OHHTTPStubs/Default (= 4.3.0)
+  - OHHTTPStubs/Core (4.3.0)
+  - OHHTTPStubs/Default (4.3.0):
+    - OHHTTPStubs/Core
+    - OHHTTPStubs/JSON
+    - OHHTTPStubs/NSURLSession
+    - OHHTTPStubs/OHPathHelpers
+  - OHHTTPStubs/JSON (4.3.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/NSURLSession (4.3.0):
+    - OHHTTPStubs/Core
+  - OHHTTPStubs/OHPathHelpers (4.3.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - JSONModel
+  - LibSpirNetworking (from `../`)
+  - OHHTTPStubs
+
+EXTERNAL SOURCES:
+  LibSpirNetworking:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
+  JSONModel: 216584d0311b053ff714f1d6cb700dbf890847bc
+  LibSpirNetworking: bc1fd85660d9b12a74839024e334e1cf0287e502
+  OHHTTPStubs: 0aec5755528693a165bd616cb79f69387de306a8
+
+COCOAPODS: 0.39.0

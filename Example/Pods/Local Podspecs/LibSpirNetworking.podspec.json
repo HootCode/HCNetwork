@@ -1,0 +1,25 @@
+{
+  "name": "LibSpirNetworking",
+  "version": "0.1.0",
+  "summary": "A short description of LibSpirNetworking.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/LibSpirNetworking",
+  "license": "MIT",
+  "authors": {
+    "Julien Goudet": "jgoudet@spir.fr"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/LibSpirNetworking.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "LibSpirNetworking": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

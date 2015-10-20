@@ -1,0 +1,26 @@
+# Podfile
+
+# Source Repositories
+source 'https://github.com/CocoaPods/Specs.git'
+
+# Platform min usage
+platform :ios, '7.0'
+
+# Dynamic frameworks instead of static libz
+use_frameworks!
+
+
+target 'LibSpirNetworking_Example', :exclusive => true do
+    
+    pod "AFNetworking"
+    pod "JSONModel"
+    pod "OHHTTPStubs"
+    pod "LibSpirNetworking", :path => "../"
+
+end
+
+target 'LibSpirNetworking_Tests', :exclusive => true do
+  
+  pod "LibSpirNetworking", :path => "../"
+
+end
