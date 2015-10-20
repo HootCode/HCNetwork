@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '9DEBB99E44492A93EF70A7BD'
+               BlueprintIdentifier = 'DCBFCA7842280A0E476707C0'
                BlueprintName = 'Pods-LibSpirNetworking_Example'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_LibSpirNetworking_Example.framework'>
+               BuildableName = 'libPods-LibSpirNetworking_Example.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

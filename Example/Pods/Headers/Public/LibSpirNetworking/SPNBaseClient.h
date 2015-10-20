@@ -1,0 +1,1 @@
+../../../../../Pod/Classes/SPNBaseClient/SPNBaseClient.h

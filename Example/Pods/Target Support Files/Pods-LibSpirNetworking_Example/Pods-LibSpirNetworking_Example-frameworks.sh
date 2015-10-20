@@ -82,16 +82,3 @@ strip_invalid_archs() {
   fi
 }
 
-
-if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-LibSpirNetworking_Example/AFNetworking.framework"
-  install_framework "Pods-LibSpirNetworking_Example/JSONModel.framework"
-  install_framework "Pods-LibSpirNetworking_Example/LibSpirNetworking.framework"
-  install_framework "Pods-LibSpirNetworking_Example/OHHTTPStubs.framework"
-fi
-if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-LibSpirNetworking_Example/AFNetworking.framework"
-  install_framework "Pods-LibSpirNetworking_Example/JSONModel.framework"
-  install_framework "Pods-LibSpirNetworking_Example/LibSpirNetworking.framework"
-  install_framework "Pods-LibSpirNetworking_Example/OHHTTPStubs.framework"
-fi

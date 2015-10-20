@@ -20,6 +20,25 @@ PODS:
   - AFNetworking/UIKit (2.6.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - FormatterKit (1.8.0):
+    - FormatterKit/AddressFormatter (= 1.8.0)
+    - FormatterKit/ArrayFormatter (= 1.8.0)
+    - FormatterKit/ColorFormatter (= 1.8.0)
+    - FormatterKit/LocationFormatter (= 1.8.0)
+    - FormatterKit/NameFormatter (= 1.8.0)
+    - FormatterKit/OrdinalNumberFormatter (= 1.8.0)
+    - FormatterKit/TimeIntervalFormatter (= 1.8.0)
+    - FormatterKit/UnitOfInformationFormatter (= 1.8.0)
+    - FormatterKit/URLRequestFormatter (= 1.8.0)
+  - FormatterKit/AddressFormatter (1.8.0)
+  - FormatterKit/ArrayFormatter (1.8.0)
+  - FormatterKit/ColorFormatter (1.8.0)
+  - FormatterKit/LocationFormatter (1.8.0)
+  - FormatterKit/NameFormatter (1.8.0)
+  - FormatterKit/OrdinalNumberFormatter (1.8.0)
+  - FormatterKit/TimeIntervalFormatter (1.8.0)
+  - FormatterKit/UnitOfInformationFormatter (1.8.0)
+  - FormatterKit/URLRequestFormatter (1.8.0)
   - JSONModel (1.1.2)
   - LibSpirNetworking (0.1.0)
   - OHHTTPStubs (4.3.0):
@@ -38,6 +57,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - FormatterKit
   - JSONModel
   - LibSpirNetworking (from `../`)
   - OHHTTPStubs
@@ -48,6 +68,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
+  FormatterKit: bddde83e054edf9d9ee14f9de3b3a5103db256f4
   JSONModel: 216584d0311b053ff714f1d6cb700dbf890847bc
   LibSpirNetworking: bc1fd85660d9b12a74839024e334e1cf0287e502
   OHHTTPStubs: 0aec5755528693a165bd616cb79f69387de306a8

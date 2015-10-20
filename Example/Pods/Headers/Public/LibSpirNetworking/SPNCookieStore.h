@@ -1,0 +1,1 @@
+../../../../../Pod/Classes/SPNCookieStore/SPNCookieStore.h

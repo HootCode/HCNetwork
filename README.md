@@ -14,11 +14,16 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Installation
 
 LibSpirNetworking is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+it, simply add the following lines to your Podfile:
 
-```ruby
-pod "LibSpirNetworking"
-```
+    
+    # Add external source
+    source 'http://bitbucket.spir.fr/scm/pods/internalspecs.git'
+
+    # Add repo
+    pod "LibSpirNetworking"
+
+
 
 ## Author
 
@@ -26,4 +31,4 @@ Julien Goudet, jgoudet@spir.fr
 
 ## License
 
-LibSpirNetworking is available under the MIT license. See the LICENSE file for more info.
+LibSpirNetworking is under SPIR Communication license. See the LICENSE file for more info.

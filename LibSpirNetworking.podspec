@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "LibSpirNetworking"
   s.version          = "0.1.0"
-  s.summary          = "A short description of LibSpirNetworking."
+  s.summary          = "AFNetworking + JSONModel + SPIR + <3 = SPNetworking"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,14 +17,17 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+                    SPNetworking is a mid-high level framework for dealing with
+                    AFNetworking and JSONModel. It allows you to use POST, GET, DELETE and PUT request methods,
+                    mock them and even add your own overlay on it.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/LibSpirNetworking"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
-  s.license          = 'MIT'
+  s.homepage         = "http://bitbucket.spir.fr/projects/PODS/repos/lib-spir-networking/README.md"
+  # s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.license          = { :type => "SPIR Communication Property", :file => "LICENSE" }
   s.author           = { "Julien Goudet" => "jgoudet@spir.fr" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/LibSpirNetworking.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "http://bitbucket.spir.fr/scm/pods/lib-spir-networking.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/jlngdt'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
