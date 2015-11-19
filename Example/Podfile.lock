@@ -1,23 +1,23 @@
 PODS:
-  - AFNetworking (2.6.1):
-    - AFNetworking/NSURLConnection (= 2.6.1)
-    - AFNetworking/NSURLSession (= 2.6.1)
-    - AFNetworking/Reachability (= 2.6.1)
-    - AFNetworking/Security (= 2.6.1)
-    - AFNetworking/Serialization (= 2.6.1)
-    - AFNetworking/UIKit (= 2.6.1)
-  - AFNetworking/NSURLConnection (2.6.1):
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.6.1):
+  - AFNetworking/NSURLSession (2.6.3):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/Reachability (2.6.1)
-  - AFNetworking/Security (2.6.1)
-  - AFNetworking/Serialization (2.6.1)
-  - AFNetworking/UIKit (2.6.1):
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - FormatterKit (1.8.0):
@@ -40,20 +40,24 @@ PODS:
   - FormatterKit/UnitOfInformationFormatter (1.8.0)
   - FormatterKit/URLRequestFormatter (1.8.0)
   - JSONModel (1.1.2)
-  - LibSpirNetworking (0.1.0)
-  - OHHTTPStubs (4.3.0):
-    - OHHTTPStubs/Default (= 4.3.0)
-  - OHHTTPStubs/Core (4.3.0)
-  - OHHTTPStubs/Default (4.3.0):
+  - LibSpirNetworking (0.1.0):
+    - AFNetworking
+    - FormatterKit
+    - JSONModel
+    - OHHTTPStubs
+  - OHHTTPStubs (4.6.0):
+    - OHHTTPStubs/Default (= 4.6.0)
+  - OHHTTPStubs/Core (4.6.0)
+  - OHHTTPStubs/Default (4.6.0):
     - OHHTTPStubs/Core
     - OHHTTPStubs/JSON
     - OHHTTPStubs/NSURLSession
     - OHHTTPStubs/OHPathHelpers
-  - OHHTTPStubs/JSON (4.3.0):
+  - OHHTTPStubs/JSON (4.6.0):
     - OHHTTPStubs/Core
-  - OHHTTPStubs/NSURLSession (4.3.0):
+  - OHHTTPStubs/NSURLSession (4.6.0):
     - OHHTTPStubs/Core
-  - OHHTTPStubs/OHPathHelpers (4.3.0)
+  - OHHTTPStubs/OHPathHelpers (4.6.0)
 
 DEPENDENCIES:
   - AFNetworking
@@ -67,10 +71,10 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  AFNetworking: 8e4e60500beb8bec644cf575beee72990a76d399
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   FormatterKit: bddde83e054edf9d9ee14f9de3b3a5103db256f4
   JSONModel: 216584d0311b053ff714f1d6cb700dbf890847bc
-  LibSpirNetworking: f6202cc53ae1dd59a8287800f928c400bb9f1e19
-  OHHTTPStubs: 0aec5755528693a165bd616cb79f69387de306a8
+  LibSpirNetworking: 93c80abcbe527dc220a85e52994437113c524971
+  OHHTTPStubs: cb1aefbbeb4de4e741644455d4b945538e5248a2
 
 COCOAPODS: 0.39.0
