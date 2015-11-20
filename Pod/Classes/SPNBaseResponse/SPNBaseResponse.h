@@ -9,6 +9,9 @@
 #import "JSONModel.h"
 #import "SPNError.h"
 
+#import "SPNEnumerations.h"
+#import "SPNConstants.h"
+
 @interface SPNBaseResponse : JSONModel
 
 /**

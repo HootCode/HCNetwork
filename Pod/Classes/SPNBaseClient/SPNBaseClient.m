@@ -20,6 +20,7 @@
 		_sharedClient = [[[self class] alloc] initWithBaseURL:_sharedClient.baseURL];
 	});
 
+    
 	return _sharedClient;
 }
 

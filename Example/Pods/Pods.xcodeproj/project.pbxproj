@@ -129,6 +129,9 @@
 		C8E16C7805678BA05647742A38C6111C /* OHPathHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 734341DE1AA96D61BF89A6EFD896E6BC /* OHPathHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C92FFCE3C06282C2D08A98524079060D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF73FC1265B19BEFA6DEBF1C31394AE7 /* Foundation.framework */; };
 		CBC37C4E36A1C9E3D608B18A309C39A7 /* TTTAddressFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1158E3EB6E9E69D47F731608CB0198F2 /* TTTAddressFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC760D761BFF6E52007B54A0 /* SPNEnumerations.h in Headers */ = {isa = PBXBuildFile; fileRef = CC760D751BFF6E4B007B54A0 /* SPNEnumerations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC760D791BFF7040007B54A0 /* SPNConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = CC760D771BFF701C007B54A0 /* SPNConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC760D7A1BFF7040007B54A0 /* SPNConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CC760D781BFF701C007B54A0 /* SPNConstants.m */; };
 		CE855F9BDE7E3A02B35E652D94CAE50F /* el.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E3D92E8A481DF489B9F9205A2AAD031A /* el.lproj */; };
 		CEDFE191DF66B8884828359B3494F8E9 /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D0848F4DDDD2AE446C0215E7B22707A7 /* UIAlertView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF051D17275C20E0FBF5736E3C8A0573 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1610A49B973A68662A7C71C0EDB79080 /* UIProgressView+AFNetworking.m */; };
@@ -430,6 +433,9 @@
 		C6BA1AD357DFA91C822B64EFCBB05707 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		CA9090E48357F526318E9F0CD1AB7798 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CABA771AE4F75E13C77E6D859DBAFED3 /* JSONModelArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelArray.h; path = JSONModel/JSONModel/JSONModelArray.h; sourceTree = "<group>"; };
+		CC760D751BFF6E4B007B54A0 /* SPNEnumerations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPNEnumerations.h; sourceTree = "<group>"; };
+		CC760D771BFF701C007B54A0 /* SPNConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPNConstants.h; sourceTree = "<group>"; };
+		CC760D781BFF701C007B54A0 /* SPNConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPNConstants.m; sourceTree = "<group>"; };
 		CDA8889278260C34F6A525E0D43A4D3F /* SPNCookieStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SPNCookieStore.m; sourceTree = "<group>"; };
 		CF1DC875DFD671046F003E8001721AF6 /* JSONModelLib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelLib.h; path = JSONModel/JSONModelLib.h; sourceTree = "<group>"; };
 		CF5DE35CC429A6418ADD68D8DEACC73A /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = nl.lproj; path = Localizations/nl.lproj; sourceTree = "<group>"; };
@@ -781,6 +787,8 @@
 			isa = PBXGroup;
 			children = (
 				568E582321F4085580214E7851AA5657 /* LibSpirNetworking.h */,
+				CC760D731BFF6E03007B54A0 /* Constants */,
+				CC760D741BFF6E03007B54A0 /* Enumerations */,
 				D1DE71D7AF5F6BDA81FBEA661A28BF45 /* SPNBaseClient */,
 				6E0F416C23FA468208F9C4F820FFA2A2 /* SPNBaseRequest */,
 				637DE6B539F7D160851852F662D159FB /* SPNBaseResponse */,
@@ -1045,6 +1053,23 @@
 			name = NameFormatter;
 			sourceTree = "<group>";
 		};
+		CC760D731BFF6E03007B54A0 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CC760D771BFF701C007B54A0 /* SPNConstants.h */,
+				CC760D781BFF701C007B54A0 /* SPNConstants.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		CC760D741BFF6E03007B54A0 /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				CC760D751BFF6E4B007B54A0 /* SPNEnumerations.h */,
+			);
+			path = Enumerations;
+			sourceTree = "<group>";
+		};
 		CDF5E6CB55624586E4CFF359FECDFAFF /* ArrayFormatter */ = {
 			isa = PBXGroup;
 			children = (
@@ -1202,11 +1227,13 @@
 			files = (
 				0087D0230B32063BD6CF88B26A95A69F /* LibSpirNetworking-umbrella.h in Headers */,
 				FBE749744088E52FAF4ED268E50EB97B /* LibSpirNetworking.h in Headers */,
+				CC760D761BFF6E52007B54A0 /* SPNEnumerations.h in Headers */,
 				2E6AFEF1217E90251354CCE424BA3137 /* SPNBaseClient.h in Headers */,
 				3A7B038B9E6F4D56C3243EB4FD9DB4F5 /* SPNBaseRequest.h in Headers */,
 				A640A3589A3D63943E142D4B70A7A689 /* SPNBaseResponse.h in Headers */,
 				ECD94206274227637B320CFC4D8CE6DF /* SPNCookieStore.h in Headers */,
 				137296A492BA91E049D11345CC061DA0 /* SPNError.h in Headers */,
+				CC760D791BFF7040007B54A0 /* SPNConstants.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1627,6 +1654,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC760D7A1BFF7040007B54A0 /* SPNConstants.m in Sources */,
 				BAACF64A476DE6B4266D558E058FB8A0 /* LibSpirNetworking-dummy.m in Sources */,
 				A7B26DDF3C79C0CB4B4436429352F894 /* SPNBaseClient.m in Sources */,
 				6ECF354F3B347F128FC6B8116658715D /* SPNBaseRequest.m in Sources */,

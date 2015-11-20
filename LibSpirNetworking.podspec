@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "LibSpirNetworking"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "AFNetworking + JSONModel + SPIR + <3 = SPNetworking"  
   s.description      = <<-DESC
                     SPNetworking is a mid-high level framework for dealing with

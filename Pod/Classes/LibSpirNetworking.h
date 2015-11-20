@@ -10,5 +10,7 @@
 #define LibSpirNetworking_h
 
 #import "SPNBaseClient.h"
+#import "SPNEnumerations.h"
+#import "SPNConstants.h"
 
 #endif /* LibSpirNetworking_h */
