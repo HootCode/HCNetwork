@@ -17,7 +17,7 @@
 	static dispatch_once_t onceToken;
 
 	dispatch_once(&onceToken, ^{
-		_sharedClient = [[SPNBaseClient alloc] initWithBaseURL:_sharedClient.baseURL];
+		_sharedClient = [[[self class] alloc] initWithBaseURL:_sharedClient.baseURL];
 	});
 
 	return _sharedClient;
