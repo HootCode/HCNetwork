@@ -155,6 +155,10 @@
 	if (requestModel) {
 		parameters = [requestModel toDictionary];
 	}
+    
+#ifdef STUB
+    [requestModel enableStub];
+#endif
 
 	return [self GET:URLString parameters:parameters success: ^(AFHTTPRequestOperation *operation, id responseObject) {
 	    [self operation:operation didSucceedWithResponse:responseObject requestObject:requestModel disableError:disableError withBlock:block];
