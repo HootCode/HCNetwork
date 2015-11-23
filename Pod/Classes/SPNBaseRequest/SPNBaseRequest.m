@@ -39,11 +39,8 @@ NSString *const DefaultStubPath = @"/";
 }
 
 + (NSString*)stubName {
-    return  NSStringFromClass([self class]);
-}
-
-+ (id <OHHTTPStubsDescriptor> )enableStubWithFileNamed:(NSString *)fileName {
-
+    @throw [NSException exceptionWithName:@"SPNBaseRequest Exception"
+                                   reason:[NSString stringWithFormat:@"[%@] - You must override this method. Request can handle default path for Stub bundle, but you need to give the name of your json !", NSStringFromClass([self class])] userInfo:nil];
 }
 
 + (id <OHHTTPStubsDescriptor> )enableStub {
@@ -56,11 +53,8 @@ NSString *const DefaultStubPath = @"/";
         NSString *stubsBundlePath = [mainBundlePath stringByAppendingPathComponent:[self stubBundleName]];
         NSBundle * stubsBundle    = [NSBundle bundleWithPath:stubsBundlePath];
         
-        NSString * rgerf=@"TeamResponse";
-        NSString * fixture        = [stubsBundle pathForResource:[[self stubPath] stringByAppendingString: @"TeamResponse"] ofType:@"json"];
-        
-        NSError * error;
-        NSArray * directoryContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:stubsBundlePath error:&error];
+        NSString * fixture        = [stubsBundle pathForResource:[[self stubPath] stringByAppendingString: [self stubName]]
+                                                          ofType:@"json"];
         
         return [OHHTTPStubsResponse responseWithFileAtPath:fixture
                                                 statusCode:200 headers:@{ @"Content-Type":@"application/json" }];
