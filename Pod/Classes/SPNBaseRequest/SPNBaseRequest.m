@@ -26,11 +26,9 @@
 
 #pragma mark - OHHTTPStubs
 
-#ifdef STUB
-
 
 NSString *const DefaultStubBundleName = @"Stubs.bundle";
-NSString *const DefaultStubPath = @"";
+NSString *const DefaultStubPath = @"/";
 
 + (NSString *) stubBundleName{
     return DefaultStubBundleName;
@@ -45,25 +43,29 @@ NSString *const DefaultStubPath = @"";
 }
 
 + (id <OHHTTPStubsDescriptor> )enableStubWithFileNamed:(NSString *)fileName {
-	return [OHHTTPStubs stubRequestsPassingTest: ^BOOL (NSURLRequest *request) {
-	    return ([request.URL.path rangeOfString:[self relativeURL]].location != NSNotFound);
-	} withStubResponse: ^OHHTTPStubsResponse *(NSURLRequest *request) {
-	    NSString *mainBundlePath      = [[NSBundle mainBundle] resourcePath];
-	    NSString *stubsBundlePath = [mainBundlePath stringByAppendingPathComponent:[self stubBundleName]];
 
-	    NSString *fixture = OHPathForFileInBundle(fileName, [NSBundle bundleWithPath:stubsBundlePath]);
-
-	    return [OHHTTPStubsResponse responseWithFileAtPath:fixture
-	                                            statusCode:200 headers:@{ @"Content-Type":@"application/json" }];
-	}];
 }
 
 + (id <OHHTTPStubsDescriptor> )enableStub {
-	NSString *fileName = [[NSString stringWithFormat:@"%@", [self relativeURL]] stringByReplacingOccurrencesOfString:@"/" withString:@"_"];
 
-	return [self enableStubWithFileNamed:fileName];
+    return [OHHTTPStubs stubRequestsPassingTest: ^BOOL (NSURLRequest *request) {
+        return ([request.URL.path rangeOfString:[self relativeURL]].location != NSNotFound);
+    } withStubResponse: ^OHHTTPStubsResponse *(NSURLRequest *request) {
+        
+        NSString *mainBundlePath  = [[NSBundle mainBundle] resourcePath];
+        NSString *stubsBundlePath = [mainBundlePath stringByAppendingPathComponent:[self stubBundleName]];
+        NSBundle * stubsBundle    = [NSBundle bundleWithPath:stubsBundlePath];
+        
+        NSString * rgerf=@"TeamResponse";
+        NSString * fixture        = [stubsBundle pathForResource:[[self stubPath] stringByAppendingString: @"TeamResponse"] ofType:@"json"];
+        
+        NSError * error;
+        NSArray * directoryContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:stubsBundlePath error:&error];
+        
+        return [OHHTTPStubsResponse responseWithFileAtPath:fixture
+                                                statusCode:200 headers:@{ @"Content-Type":@"application/json" }];
+    }];
 }
 
-#endif /* ifdef STUB */
 
 @end

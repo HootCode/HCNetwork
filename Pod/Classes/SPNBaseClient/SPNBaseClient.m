@@ -66,10 +66,10 @@
 		parameters = [requestModel toDictionary];
 	}
 
-#ifdef STUB
-	[requestModel enableStub];
-#endif
-
+    if (NEEDSTUB) {
+        [requestModel enableStub];
+    }
+    
 	return [self POST:URLString parameters:parameters success: ^(AFHTTPRequestOperation *operation, id responseObject) {
 	    [self operation:operation didSucceedWithResponse:responseObject requestObject:requestModel disableError:disableError withBlock:block];
 	} failure: ^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -88,9 +88,9 @@
 		parameters = [requestModel toDictionary];
 	}
 
-#ifdef STUB
-	[requestModel enableStub];
-#endif
+    if (NEEDSTUB) {
+        [requestModel enableStub];
+    }
 
 	AFHTTPRequestOperation *operation;
 	operation = [self POST:URLString parameters:parameters success: ^(AFHTTPRequestOperation *operation, id responseObject) {
@@ -156,9 +156,9 @@
 		parameters = [requestModel toDictionary];
 	}
     
-#ifdef STUB
-    [requestModel enableStub];
-#endif
+    if (NEEDSTUB) {
+        [[requestModel class] enableStub];
+    }
 
 	return [self GET:URLString parameters:parameters success: ^(AFHTTPRequestOperation *operation, id responseObject) {
 	    [self operation:operation didSucceedWithResponse:responseObject requestObject:requestModel disableError:disableError withBlock:block];
@@ -178,9 +178,9 @@
 		parameters = [requestModel toDictionary];
 	}
 
-#ifdef STUB
-	[requestModel enableStub];
-#endif
+    if (NEEDSTUB) {
+        [requestModel enableStub];
+    }
 
 	AFHTTPRequestOperation *operation;
 	operation = [self GET:URLString parameters:parameters success: ^(AFHTTPRequestOperation *operation, id responseObject) {

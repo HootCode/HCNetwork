@@ -10,9 +10,8 @@
 #import "AFNetworking.h"
 #import "SPNBaseResponse.h"
 
-#ifdef STUB
 #import <OHHTTPStubs/OHHTTPStubs.h>
-#endif
+
 @interface SPNBaseRequest : JSONModel
 
 #pragma mark - Getters
@@ -27,7 +26,6 @@
 
 
 
-#ifdef STUB
 
 #pragma mark - Stub Mode
 
@@ -42,8 +40,5 @@ extern NSString *const DefaultStubPath;
 
 + (id <OHHTTPStubsDescriptor> )enableStub;
 
-+ (id <OHHTTPStubsDescriptor> )enableStubWithFileNamed:(NSString *)fileName;
-
-#endif
 
 @end

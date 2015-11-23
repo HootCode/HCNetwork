@@ -28,6 +28,8 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes/**/*'
 
+  s.prefix_header_contents = '#define NEEDSTUB [[[NSBundle mainBundle] infoDictionary] valueForKey:@"Stub"]'
+
   s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'Foundation'
   s.dependency 'AFNetworking'
