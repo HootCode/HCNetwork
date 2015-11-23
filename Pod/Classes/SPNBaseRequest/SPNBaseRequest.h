@@ -26,9 +26,19 @@
 
 
 
+
 #ifdef STUB
 
 #pragma mark - Stub Mode
+
+extern NSString *const DefaultStubBundleName;
+extern NSString *const DefaultStubPath;
+
++ (NSString *) stubBundleName;
+
++ (NSString *) stubPath;
+
++ (NSString *) stubName;
 
 + (id <OHHTTPStubsDescriptor> )enableStub;
 

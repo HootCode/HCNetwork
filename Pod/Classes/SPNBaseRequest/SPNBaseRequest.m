@@ -28,12 +28,28 @@
 
 #ifdef STUB
 
+
+NSString *const DefaultStubBundleName = @"Stubs.bundle";
+NSString *const DefaultStubPath = @"";
+
++ (NSString *) stubBundleName{
+    return DefaultStubBundleName;
+}
+
++ (NSString *) stubPath{
+    return DefaultStubPath;
+}
+
++ (NSString*)stubName {
+    return  NSStringFromClass([self class]);
+}
+
 + (id <OHHTTPStubsDescriptor> )enableStubWithFileNamed:(NSString *)fileName {
 	return [OHHTTPStubs stubRequestsPassingTest: ^BOOL (NSURLRequest *request) {
 	    return ([request.URL.path rangeOfString:[self relativeURL]].location != NSNotFound);
 	} withStubResponse: ^OHHTTPStubsResponse *(NSURLRequest *request) {
 	    NSString *mainBundlePath      = [[NSBundle mainBundle] resourcePath];
-	    NSString *stubsBundlePath = [mainBundlePath stringByAppendingPathComponent:@"Stubs.bundle"];
+	    NSString *stubsBundlePath = [mainBundlePath stringByAppendingPathComponent:[self stubBundleName]];
 
 	    NSString *fixture = OHPathForFileInBundle(fileName, [NSBundle bundleWithPath:stubsBundlePath]);
 
