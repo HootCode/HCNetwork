@@ -19,11 +19,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>LibSpirNetworking-LibSpirNetworking.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>LibSpirNetworking.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,17 +52,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>438D7F74820ABF10C9284F61B9E6AD38</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4878C70B21CA37D7CB8A476BF986741B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>48B597C21C25F27779D264BD6AACF059</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>818938B7C1E83D75BBC666586C9A7084</key>
+		<key>6B9FC3202C1768521CE7C8B11D0496E0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -78,11 +73,6 @@
 			<true/>
 		</dict>
 		<key>C258713D3CDFB610C3C69ADD4E590367</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E8666BEFF7010733F7C744612F98F5D3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

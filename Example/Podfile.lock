@@ -40,7 +40,7 @@ PODS:
   - FormatterKit/UnitOfInformationFormatter (1.8.0)
   - FormatterKit/URLRequestFormatter (1.8.0)
   - JSONModel (1.1.2)
-  - LibSpirNetworking (0.1.0):
+  - LibSpirNetworking (0.1.8):
     - AFNetworking
     - FormatterKit
     - JSONModel
@@ -62,7 +62,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - FormatterKit
-  - JSONModel
+  - JSONModel (~> 1.1.2.spir)
   - LibSpirNetworking (from `../`)
   - OHHTTPStubs
 
@@ -74,7 +74,7 @@ SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   FormatterKit: bddde83e054edf9d9ee14f9de3b3a5103db256f4
   JSONModel: 216584d0311b053ff714f1d6cb700dbf890847bc
-  LibSpirNetworking: 93c80abcbe527dc220a85e52994437113c524971
+  LibSpirNetworking: bafaaa8f6a8c7ab08f247cc9dfa7f76d430b2cc7
   OHHTTPStubs: cb1aefbbeb4de4e741644455d4b945538e5248a2
 
 COCOAPODS: 0.39.0

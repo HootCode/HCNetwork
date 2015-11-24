@@ -2,3 +2,4 @@
 #import <UIKit/UIKit.h>
 #endif
 
+#define NEEDSTUB [[[NSBundle mainBundle] infoDictionary] valueForKey:@"Stub"]
