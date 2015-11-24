@@ -28,7 +28,7 @@
 
 
 NSString *const DefaultStubBundleName = @"Stubs.bundle";
-NSString *const DefaultStubPath = @"/";
+NSString *const DefaultStubPath = nil;
 
 + (NSString *) stubBundleName{
     return DefaultStubBundleName;
@@ -52,12 +52,15 @@ NSString *const DefaultStubPath = @"/";
         NSString *mainBundlePath  = [[NSBundle mainBundle] resourcePath];
         NSString *stubsBundlePath = [mainBundlePath stringByAppendingPathComponent:[self stubBundleName]];
         NSBundle * stubsBundle    = [NSBundle bundleWithPath:stubsBundlePath];
+
+        NSString * fixture        = [stubsBundle pathForResource:[self stubName]
+                                                          ofType:@"json"
+                                                     inDirectory:[self stubPath]];
         
-        NSString * fixture        = [stubsBundle pathForResource:[[self stubPath] stringByAppendingString: [self stubName]]
-                                                          ofType:@"json"];
+        BOOL success = ![[self stubName] hasSuffix:@"KO"];
         
-        return [OHHTTPStubsResponse responseWithFileAtPath:fixture
-                                                statusCode:200 headers:@{ @"Content-Type":@"application/json" }];
+        return [OHHTTPStubsResponse responseWithFileAtPath:(success ? fixture : nil)
+                                                statusCode:(success ? Success200 : InternalError500) headers:@{ @"Content-Type":@"application/json" }];
     }];
 }
 
