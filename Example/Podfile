@@ -14,7 +14,7 @@ target 'LibSpirNetworking_Example', :exclusive => true do
    
     # Public pods
     pod "AFNetworking"
-    pod "JSONModel", '~>1.1.2.spir'
+    pod "JSONModel", '~>1.1.2'
     pod "OHHTTPStubs"
     pod "FormatterKit"
     

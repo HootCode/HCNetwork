@@ -145,7 +145,7 @@ lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
  * Instead you should subclass it, and define the properties you want your data model
  * to have as properties of your own class.
  */
-@interface JSONModel : NSManagedObjectModel <AbstractJSONModelProtocol, NSSecureCoding>
+@interface JSONModel : NSObject <AbstractJSONModelProtocol, NSSecureCoding>
 
 /** @name Creating and initializing models */
 
