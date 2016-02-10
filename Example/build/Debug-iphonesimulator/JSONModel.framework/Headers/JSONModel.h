@@ -19,6 +19,7 @@
 #import "JSONModelError.h"
 #import "JSONValueTransformer.h"
 #import "JSONKeyMapper.h"
+#import <CoreData/CoreData.h>
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 #if TARGET_IPHONE_SIMULATOR

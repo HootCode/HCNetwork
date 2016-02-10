@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "LibSpirNetworking"
-  s.version          = "0.1.10"
+  s.version          = "0.1.11"
   s.summary          = "AFNetworking + JSONModel + SPIR + <3 = SPNetworking"  
   s.description      = <<-DESC
                     SPNetworking is a mid-high level framework for dealing with
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "http://bitbucket.spir.fr/scm/pods/lib-spir-networking.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/jlngdt'
 
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '9.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 
   s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'Foundation'
-  s.dependency 'AFNetworking'
+  s.dependency 'AFNetworking', '~>2.0'
   s.dependency 'JSONModel'
   s.dependency 'OHHTTPStubs'
   s.dependency 'FormatterKit'

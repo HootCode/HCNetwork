@@ -19,4 +19,9 @@ dependencies: \
   /Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/Headers/Private/AFNetworking/AFHTTPSessionManager.h \
   /Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/Headers/Private/LibSpirNetworking/SPNBaseResponse.h \
   /Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/Headers/Private/LibSpirNetworking/SPNError.h \
+  /Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/Headers/Private/LibSpirNetworking/SPNEnumerations.h \
+  /Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/Headers/Private/LibSpirNetworking/SPNConstants.h \
+  /Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/Headers/Private/OHHTTPStubs/OHHTTPStubs.h \
+  /Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/Headers/Private/OHHTTPStubs/Compatibility.h \
+  /Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/Headers/Private/OHHTTPStubs/OHHTTPStubsResponse.h \
   /Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/Headers/Private/FormatterKit/TTTURLRequestFormatter.h

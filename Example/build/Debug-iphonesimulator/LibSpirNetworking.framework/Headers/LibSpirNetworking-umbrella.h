@@ -1,5 +1,7 @@
 #import <UIKit/UIKit.h>
 
+#import "SPNConstants.h"
+#import "SPNEnumerations.h"
 #import "LibSpirNetworking.h"
 #import "SPNBaseClient.h"
 #import "SPNBaseRequest.h"

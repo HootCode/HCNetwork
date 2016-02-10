@@ -7,4 +7,6 @@ dependencies: \
   /Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/Headers/Private/JSONModel/JSONValueTransformer.h \
   /Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/Headers/Private/JSONModel/JSONModelArray.h \
   /Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/Headers/Private/JSONModel/JSONKeyMapper.h \
-  /Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/Headers/Private/LibSpirNetworking/SPNError.h
+  /Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/Headers/Private/LibSpirNetworking/SPNError.h \
+  /Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/Headers/Private/LibSpirNetworking/SPNEnumerations.h \
+  /Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/Headers/Private/LibSpirNetworking/SPNConstants.h

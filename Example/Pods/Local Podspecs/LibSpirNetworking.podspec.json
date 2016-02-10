@@ -1,6 +1,6 @@
 {
   "name": "LibSpirNetworking",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "summary": "AFNetworking + JSONModel + SPIR + <3 = SPNetworking",
   "description": "SPNetworking is a mid-high level framework for dealing with\nAFNetworking and JSONModel. It allows you to use POST, GET, DELETE and PUT request methods,\nmock them and even add your own overlay on it.",
   "homepage": "http://bitbucket.spir.fr/projects/PODS/repos/lib-spir-networking/browse/README.md",
@@ -13,11 +13,11 @@
   },
   "source": {
     "git": "http://bitbucket.spir.fr/scm/pods/lib-spir-networking.git",
-    "tag": "0.1.10"
+    "tag": "0.1.11"
   },
   "social_media_url": "https://twitter.com/jlngdt",
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "requires_arc": true,
   "source_files": "Pod/Classes/**/*",
@@ -29,7 +29,7 @@
   ],
   "dependencies": {
     "AFNetworking": [
-
+      "~>2.0"
     ],
     "JSONModel": [
 

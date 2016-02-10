@@ -319,8 +319,18 @@
         },
         {
           'type': 'file',
+          'name': "SPNConstants.h",
+          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Pod/Classes/Constants/SPNConstants.h"
+        },
+        {
+          'type': 'file',
           'name': "SPNCookieStore.h",
           'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Pod/Classes/SPNCookieStore/SPNCookieStore.h"
+        },
+        {
+          'type': 'file',
+          'name': "SPNEnumerations.h",
+          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Pod/Classes/Enumerations/SPNEnumerations.h"
         },
         {
           'type': 'file',
