@@ -46,7 +46,7 @@ NSString *const DefaultStubPath = nil;
 + (id <OHHTTPStubsDescriptor> )enableStub {
 
     return [OHHTTPStubs stubRequestsPassingTest: ^BOOL (NSURLRequest *request) {
-        return ([request.URL.path rangeOfString:[self relativeURL]].location != NSNotFound);
+        return ([request.URL.path rangeOfString:[[self new] relativeURL]].location != NSNotFound);
     } withStubResponse: ^OHHTTPStubsResponse *(NSURLRequest *request) {
         
         NSString *mainBundlePath  = [[NSBundle mainBundle] resourcePath];
