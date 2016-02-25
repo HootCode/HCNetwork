@@ -19,7 +19,7 @@
 	                               reason:[NSString stringWithFormat:@"[%@] - You must override this method. A request can't have a response model, inherited from SPNBaseResponse", NSStringFromClass([self class])] userInfo:nil];
 }
 
-+ (NSString *)relativeURL {
+- (NSString *)relativeURL {
 	@throw [NSException exceptionWithName:@"SPNBaseRequest Exception"
 	                               reason:[NSString stringWithFormat:@"[%@] - You must override this method. Client give the base URL, but you have to give here the endpoint", NSStringFromClass([self class])] userInfo:nil];
 }

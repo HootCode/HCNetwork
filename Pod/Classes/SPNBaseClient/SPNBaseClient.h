@@ -67,6 +67,17 @@
                                 progress:(void (^)(int percent))progress;
 
 
+/**
+ *  Call this method to send the given request through PUT method
+ *
+ *  @param requestModel the given request to send
+ *  @param block        the completion block, call on success with responser and/or error
+ *
+ *  @return the AFHTTPRequestOperation created if you want it
+ */
+- (AFHTTPRequestOperation *)PUT:(SPNBaseRequest *)requestModel
+                       withBlock:(void (^)(id responseModel, SPNError *error))block;
+
 
 #pragma mark - Main Requests - Public GET
 

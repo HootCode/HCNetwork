@@ -51,13 +51,13 @@
 
 - (AFHTTPRequestOperation *)POST:(SPNBaseRequest *)requestModel
                        withBlock:(void (^)(id responseModel, SPNError *error))block {
-    return [self POST:[[requestModel class] relativeURL]  requestModel:requestModel disableError:NO withBlock:block];
+    return [self POST:[requestModel relativeURL]  requestModel:requestModel disableError:NO withBlock:block];
 }
 
 - (AFHTTPRequestOperation *)POSTProgress:(SPNBaseRequest *)requestModel
                                withBlock:(void (^)(id responseModel, SPNError *error))block
                                 progress:(void (^)(int percent))progress {
-    return [self POST:[[requestModel class] relativeURL]  requestModel:requestModel disableError:NO withBlock:block progress:progress];
+    return [self POST:[requestModel relativeURL]  requestModel:requestModel disableError:NO withBlock:block progress:progress];
 }
 
 #pragma mark - Main Requests - Private POST
@@ -77,11 +77,11 @@
     }
     
     return [self POST:URLString parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"[OK POST] Request With Params:\n\n URL = %@\n\n Params = %@ \n\n HeaderFields = %@ \n\n Response = \n\n %@", URLString, [requestModel toJSONString], [operation.request allHTTPHeaderFields], responseObject);
+        NSLog(@"[OK POST] Request With Params:\n\n URL = %@\n\n Params = %@ \n\n HeaderFields = %@ \n\n Response = \n\n %@", operation.request.URL, [requestModel toJSONString], [operation.request allHTTPHeaderFields], responseObject);
         
         [self operation:operation didSucceedWithResponse:responseObject requestObject:requestModel disableError:disableError withBlock:block];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"[KO POST] Request With Params:\n URL = %@\n Params = %@ \n HeaderFields = %@ \n Reason = %@", URLString, [requestModel toJSONString], [operation.request allHTTPHeaderFields], operation.responseString);
+        NSLog(@"[KO POST] Request With Params:\n URL = %@\n Params = %@ \n HeaderFields = %@ \n Reason = %@", operation.request.URL, [requestModel toJSONString], [operation.request allHTTPHeaderFields], operation.responseString);
         
         [self operation:operation didFailedWithError:error disableError:disableError withBlock:block];
     }];
@@ -121,12 +121,49 @@
     }
     
     return [self POST:URLString parameters:parameters constructingBodyWithBlock:formData success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"[OK POST] Request With Params:\n\n URL = %@\n\n Params = %@ \n\n HeaderFields = %@ \n\n Response = \n\n %@", URLString, [requestModel toJSONString], [operation.request allHTTPHeaderFields], responseObject);
+        NSLog(@"[OK POST] Request With Params:\n\n URL = %@\n\n Params = %@ \n\n HeaderFields = %@ \n\n Response = \n\n %@", operation.request.URL, [requestModel toJSONString], [operation.request allHTTPHeaderFields], responseObject);
 
         [self operation:operation didSucceedWithResponse:responseObject requestObject:requestModel disableError:disableError withBlock:block];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"[KO POST] Request With Params:\n URL = %@\n Params = %@ \n HeaderFields = %@ \n Reason = %@", URLString, [requestModel toJSONString], [operation.request allHTTPHeaderFields], operation.responseString);
+        NSLog(@"[KO POST] Request With Params:\n URL = %@\n Params = %@ \n HeaderFields = %@ \n Reason = %@", operation.request.URL, [requestModel toJSONString], [operation.request allHTTPHeaderFields], operation.responseString);
 
+        [self operation:operation didFailedWithError:error disableError:disableError withBlock:block];
+    }];
+}
+
+
+
+
+#pragma mark - Main Requests - Public PUT
+
+- (AFHTTPRequestOperation *)PUT:(SPNBaseRequest *)requestModel
+                      withBlock:(void (^)(id responseModel, SPNError *error))block{
+        return [self PUT:[requestModel relativeURL]  requestModel:requestModel disableError:NO withBlock:block];
+}
+
+#pragma mark - Main Requests - Private PUT
+
+- (AFHTTPRequestOperation *)PUT:(NSString *)URLString
+                    requestModel:(id)requestModel
+                    disableError:(BOOL)disableError
+                       withBlock:(void (^)(id responseModel, SPNError *error))block {
+    NSDictionary *parameters = nil;
+    
+    if (requestModel) {
+        parameters = [requestModel toDictionary];
+    }
+    
+    if (NEEDSTUB) {
+        [requestModel enableStub];
+    }
+    
+    return [self PUT:URLString parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"[OK PUT] Request With Params:\n\n URL = %@\n\n Params = %@ \n\n HeaderFields = %@ \n\n Response = \n\n %@", operation.request.URL, [requestModel toJSONString], [operation.request allHTTPHeaderFields], responseObject);
+        
+        [self operation:operation didSucceedWithResponse:responseObject requestObject:requestModel disableError:disableError withBlock:block];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"[KO PUT] Request With Params:\n URL = %@\n Params = %@ \n HeaderFields = %@ \n Reason = %@", operation.request.URL, [requestModel toJSONString], [operation.request allHTTPHeaderFields], operation.responseString);
+        
         [self operation:operation didFailedWithError:error disableError:disableError withBlock:block];
     }];
 }
@@ -135,13 +172,13 @@
 
 - (AFHTTPRequestOperation *)GET:(SPNBaseRequest *)requestModel
                       withBlock:(void (^)(id responseModel, SPNError *error))block {
-    return [self GET:[[requestModel class] relativeURL]  requestModel:requestModel disableError:NO withBlock:block];
+    return [self GET:[requestModel relativeURL]  requestModel:requestModel disableError:NO withBlock:block];
 }
 
 - (AFHTTPRequestOperation *)GETProgress:(SPNBaseRequest *)requestModel
                               withBlock:(void (^)(id responseModel, SPNError *error))block
                                progress:(void (^)(int percent))progress {
-    return [self GET:[[requestModel class] relativeURL]  requestModel:requestModel disableError:NO withBlock:block progress:progress];
+    return [self GET:[requestModel relativeURL]  requestModel:requestModel disableError:NO withBlock:block progress:progress];
 }
 
 #pragma mark - Main Requests - Private GET
@@ -161,11 +198,11 @@
     }
     
     return [self GET:URLString parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"[OK GET] Request with URL = %@\n\n HeaderFields = %@ \n\n Response = \n\n %@", URLString, [operation.request allHTTPHeaderFields], responseObject);
+        NSLog(@"[OK GET] Request with URL = %@\n\n HeaderFields = %@ \n\n Response = \n\n %@", operation.request.URL, [operation.request allHTTPHeaderFields], responseObject);
         
         [self operation:operation didSucceedWithResponse:responseObject requestObject:requestModel disableError:disableError withBlock:block];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"[KO GET] Request With URL = %@\n\n HeaderFields = %@\n\n Reason = %@", URLString, [operation.request allHTTPHeaderFields], operation.responseString);
+        NSLog(@"[KO GET] Request With URL = %@\n\n HeaderFields = %@\n\n Reason = %@", operation.request.URL, [operation.request allHTTPHeaderFields], operation.responseString);
         
         [self operation:operation didFailedWithError:error disableError:disableError withBlock:block];
     }];
@@ -222,12 +259,18 @@
     /**
      *  Do what you want with the error here
      */
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:error.popupTitle
-                                                   message:error.popupMessage
-                                                  delegate:nil
-                                         cancelButtonTitle:@"OK"
-                                         otherButtonTitles:nil];
-    [alert show];
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:error.popupTitle
+                                                                   message:error.popupMessage
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *_Nonnull action) {}]];
+    
+    UIWindow* alertWindow          = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    alertWindow.rootViewController = [[UIViewController alloc] init];
+    alertWindow.windowLevel        = UIWindowLevelAlert + 1;
+    [alertWindow makeKeyAndVisible];
+    [alertWindow.rootViewController presentViewController:alert animated:YES completion:nil];
     
     if (block) {
         block(nil, error);

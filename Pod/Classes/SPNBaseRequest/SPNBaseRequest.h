@@ -18,7 +18,7 @@
 
 - (Class)responseModel;
 
-+ (NSString *)relativeURL;
+- (NSString *)relativeURL;
 
 #pragma mark - Main Requests
 
