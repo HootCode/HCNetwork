@@ -77,11 +77,11 @@
     }
     
     return [self POST:URLString parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"[OK POST] Request With Params:\n\n URL = %@\n\n Params = %@ \n\n HeaderFields = %@ \n\n Response = \n\n %@", operation.request.URL, [requestModel toJSONString], [operation.request allHTTPHeaderFields], responseObject);
+        NSLog(@"⭕️ [OK POST] Request With Params:\n\n URL = %@\n\n Params = %@ \n\n HeaderFields = %@ \n\n Response = \n\n %@", operation.request.URL, [requestModel toJSONString], [operation.request allHTTPHeaderFields], responseObject);
         
         [self operation:operation didSucceedWithResponse:responseObject requestObject:requestModel disableError:disableError withBlock:block];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"[KO POST] Request With Params:\n URL = %@\n Params = %@ \n HeaderFields = %@ \n Reason = %@", operation.request.URL, [requestModel toJSONString], [operation.request allHTTPHeaderFields], operation.responseString);
+        NSLog(@"❌ [KO POST] Request With Params:\n URL = %@\n Params = %@ \n HeaderFields = %@ \n Reason = %@", operation.request.URL, [requestModel toJSONString], [operation.request allHTTPHeaderFields], operation.responseString);
         
         [self operation:operation didFailedWithError:error disableError:disableError withBlock:block];
     }];
@@ -121,18 +121,15 @@
     }
     
     return [self POST:URLString parameters:parameters constructingBodyWithBlock:formData success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"[OK POST] Request With Params:\n\n URL = %@\n\n Params = %@ \n\n HeaderFields = %@ \n\n Response = \n\n %@", operation.request.URL, [requestModel toJSONString], [operation.request allHTTPHeaderFields], responseObject);
+        NSLog(@"⭕️ [OK POST] Request With Params:\n\n URL = %@\n\n Params = %@ \n\n HeaderFields = %@ \n\n Response = \n\n %@", operation.request.URL, [requestModel toJSONString], [operation.request allHTTPHeaderFields], responseObject);
 
         [self operation:operation didSucceedWithResponse:responseObject requestObject:requestModel disableError:disableError withBlock:block];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"[KO POST] Request With Params:\n URL = %@\n Params = %@ \n HeaderFields = %@ \n Reason = %@", operation.request.URL, [requestModel toJSONString], [operation.request allHTTPHeaderFields], operation.responseString);
+        NSLog(@"❌ [KO POST] Request With Params:\n URL = %@\n Params = %@ \n HeaderFields = %@ \n Reason = %@", operation.request.URL, [requestModel toJSONString], [operation.request allHTTPHeaderFields], operation.responseString);
 
         [self operation:operation didFailedWithError:error disableError:disableError withBlock:block];
     }];
 }
-
-
-
 
 #pragma mark - Main Requests - Public PUT
 
@@ -158,15 +155,71 @@
     }
     
     return [self PUT:URLString parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"[OK PUT] Request With Params:\n\n URL = %@\n\n Params = %@ \n\n HeaderFields = %@ \n\n Response = \n\n %@", operation.request.URL, [requestModel toJSONString], [operation.request allHTTPHeaderFields], responseObject);
+        NSLog(@"⭕️ [OK PUT] Request With Params:\n\n URL = %@\n\n Params = %@ \n\n HeaderFields = %@ \n\n Response = \n\n %@", operation.request.URL, [requestModel toJSONString], [operation.request allHTTPHeaderFields], responseObject);
         
         [self operation:operation didSucceedWithResponse:responseObject requestObject:requestModel disableError:disableError withBlock:block];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"[KO PUT] Request With Params:\n URL = %@\n Params = %@ \n HeaderFields = %@ \n Reason = %@", operation.request.URL, [requestModel toJSONString], [operation.request allHTTPHeaderFields], operation.responseString);
+        NSLog(@"❌ [KO PUT] Request With Params:\n URL = %@\n Params = %@ \n HeaderFields = %@ \n Reason = %@", operation.request.URL, [requestModel toJSONString], [operation.request allHTTPHeaderFields], operation.responseString);
         
         [self operation:operation didFailedWithError:error disableError:disableError withBlock:block];
     }];
 }
+
+#pragma mark - Main Requests - Public DELETE
+
+- (AFHTTPRequestOperation *)DELETE:(SPNBaseRequest *)requestModel
+                      withBlock:(void (^)(id responseModel, SPNError *error))block {
+    return [self DELETE:[requestModel relativeURL]  requestModel:requestModel disableError:NO withBlock:block];
+}
+
+- (AFHTTPRequestOperation *)DELETEProgress:(SPNBaseRequest *)requestModel
+                              withBlock:(void (^)(id responseModel, SPNError *error))block
+                               progress:(void (^)(int percent))progress {
+    return [self DELETE:[requestModel relativeURL]  requestModel:requestModel disableError:NO withBlock:block progress:progress];
+}
+
+#pragma mark - Main Requests - Private DELETE
+
+- (AFHTTPRequestOperation *)DELETE:(NSString *)URLString
+                   requestModel:(id)requestModel
+                   disableError:(BOOL)disableError
+                      withBlock:(void (^)(id responseModel, SPNError *error))block {
+    NSDictionary *parameters = nil;
+    
+    if (requestModel) {
+        parameters = [requestModel toDictionary];
+    }
+    
+    if (NEEDSTUB) {
+        [[requestModel class] enableStub];
+    }
+    
+    return [self DELETE:URLString parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"⭕️ [OK DELETE] Request with URL = %@\n\n HeaderFields = %@ \n\n Response = \n\n %@", operation.request.URL, [operation.request allHTTPHeaderFields], responseObject);
+        
+        [self operation:operation didSucceedWithResponse:responseObject requestObject:requestModel disableError:disableError withBlock:block];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"❌ [KO DELETE] Request With URL = %@\n\n HeaderFields = %@\n\n Reason = %@", operation.request.URL, [operation.request allHTTPHeaderFields], operation.responseString);
+        
+        [self operation:operation didFailedWithError:error disableError:disableError withBlock:block];
+    }];
+}
+
+- (AFHTTPRequestOperation *)DELETE:(NSString *)URLString
+                   requestModel:(id)requestModel
+                   disableError:(BOOL)disableError
+                      withBlock:(void (^)(id responseModel, SPNError *error))block
+                       progress:(void (^)(int percent))progress {
+    
+    AFHTTPRequestOperation *operation = [self DELETE:URLString requestModel:requestModel disableError:disableError withBlock:block];
+    
+    [operation setDownloadProgressBlock:^(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead) {
+        progress((int)(totalBytesRead / totalBytesExpectedToRead * 100));
+    }];
+    
+    return operation;
+}
+
 
 #pragma mark - Main Requests - Public GET
 
@@ -198,11 +251,11 @@
     }
     
     return [self GET:URLString parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"[OK GET] Request with URL = %@\n\n HeaderFields = %@ \n\n Response = \n\n %@", operation.request.URL, [operation.request allHTTPHeaderFields], responseObject);
+        NSLog(@"⭕️ [OK GET] Request with URL = %@\n\n HeaderFields = %@ \n\n Response = \n\n %@", operation.request.URL, [operation.request allHTTPHeaderFields], responseObject);
         
         [self operation:operation didSucceedWithResponse:responseObject requestObject:requestModel disableError:disableError withBlock:block];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"[KO GET] Request With URL = %@\n\n HeaderFields = %@\n\n Reason = %@", operation.request.URL, [operation.request allHTTPHeaderFields], operation.responseString);
+        NSLog(@"❌ [KO GET] Request With URL = %@\n\n HeaderFields = %@\n\n Reason = %@", operation.request.URL, [operation.request allHTTPHeaderFields], operation.responseString);
         
         [self operation:operation didFailedWithError:error disableError:disableError withBlock:block];
     }];

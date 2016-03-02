@@ -78,6 +78,21 @@
 - (AFHTTPRequestOperation *)PUT:(SPNBaseRequest *)requestModel
                        withBlock:(void (^)(id responseModel, SPNError *error))block;
 
+/**
+ *  Call this method to send the given request through DELETE method
+ *
+ *  @param requestModel the given request to send
+ *  @param block        the completion block, call on success with responser and/or error
+ *
+ *  @return the AFHTTPRequestOperation created if you want it
+ */
+- (AFHTTPRequestOperation *)DELETE:(SPNBaseRequest *)requestModel
+                      withBlock:(void (^)(id responseModel, SPNError *error))block;
+
+- (AFHTTPRequestOperation *)DELETEProgress:(SPNBaseRequest *)requestModel
+                              withBlock:(void (^)(id responseModel, SPNError *error))block
+                               progress:(void (^)(int percent))progress;
+
 
 #pragma mark - Main Requests - Public GET
 
