@@ -205,6 +205,59 @@
     }];
 }
 
+-(NSError*)errorWithOperation:(AFHTTPRequestOperation*)operation andBaseError:(NSError*)error
+{
+    NSMutableDictionary* dico = [NSMutableDictionary dictionaryWithDictionary:error.userInfo];
+    dico[@"NSLocalizedDescription"] = [self retrieveSpirMessage:operation.responseObject]?:error.userInfo[@"NSLocalizedDescription"];
+    NSError* err = [NSError errorWithDomain:error.domain code:error.code userInfo:dico];
+    return err;
+}
+
+-(NSString*)retrieveSpirMessage:(id)json
+{
+    NSString* message;
+    
+    if ([json isKindOfClass:[NSDictionary class]]) {
+        message = [json valueForKey:@"Message"];
+        
+        if (message==nil) {
+            message = [json valueForKey:@"ErrorMessage"];
+        }
+        
+        if (message==nil) {
+            message = [json valueForKey:@"message"];
+        }
+    }else if ([json isKindOfClass:[NSArray class]])
+    {
+        NSArray* errors;
+        @try {
+            errors = [json valueForKey:@"ErrorMessage"];
+        }
+        @catch (NSException *exception) {
+            if(exception) NSLog(@"<WSKIT> ❌ Got error parsing ErrorMessage : %@", exception.description);
+        }
+        
+        if ([errors containsObject:[NSNull null]]) {
+            @try {
+                errors = [json valueForKey:@"message"];
+            }
+            @catch (NSException *exception) {
+                if(exception) NSLog(@"<WSKIT> ❌ Got error parsing error : %@", exception.description);
+            }
+        }
+        
+        for (id potentialError in errors) {
+            if (potentialError != [NSNull null]) {
+                if (message==nil) message=[NSString stringWithFormat:@"%@\n",potentialError];
+                else message = [message stringByAppendingFormat:@"\n%@\n",potentialError];
+            }
+        }
+    }
+    
+    return [message stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"\n"]];
+}
+
+
 - (AFHTTPRequestOperation *)DELETE:(NSString *)URLString
                    requestModel:(id)requestModel
                    disableError:(BOOL)disableError
@@ -283,7 +336,7 @@
 }
 
 - (void)operation:(AFHTTPRequestOperation *)operation didFailedWithError:(NSError *)error disableError:(BOOL)disableError withBlock:(void (^)(id responseModel, SPNError *error))block {
-    [self handleFailure:[SPNError errorFromHTTPError:error] forURLRequest:operation.request disableError:disableError withBlock:block];
+    [self handleFailure:[SPNError errorFromHTTPError:[self errorWithOperation:operation andBaseError:error]] forURLRequest:operation.request disableError:disableError withBlock:block];
 }
 
 - (void)handleSuccessWithResponseObject:(id)responseObject request:(id)requestObject forURLRequest:(NSURLRequest *)urlRequest disableError:(BOOL)disableError withBlock:(void (^)(id responseModel, SPNError *error))block {

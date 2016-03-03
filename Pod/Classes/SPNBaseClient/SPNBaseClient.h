@@ -121,6 +121,9 @@
                                progress:(void (^)(int percent))progress;
 
 
+//Parse Error
+-(NSError*)errorWithOperation:(AFHTTPRequestOperation*)operation andBaseError:(NSError*)error;
+
 /**
  *  Override this method to handle the error (for ex: Popup) and re-arrange it, then do what you want
  *
