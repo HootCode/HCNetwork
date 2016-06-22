@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		079704A01D1AEF4B0099FC52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
+		077FF8E21D1AF49100310781 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
+		077FF8E41D1AF4AB00310781 /* Pods_HCNetwork_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 077FF8E31D1AF4AB00310781 /* Pods_HCNetwork_Example.framework */; };
+		077FF8E51D1AF4D000310781 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079704A51D1AEFC20099FC52 /* LaunchScreen.storyboard */; };
+		077FF8E61D1AF4D000310781 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079704A61D1AEFC20099FC52 /* Main.storyboard */; };
+		077FF8E71D1AF4D000310781 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
+		077FF8E81D1AF4D000310781 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		079704A71D1AEFC20099FC52 /* HCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 079704A21D1AEFC20099FC52 /* HCAppDelegate.m */; };
 		079704A81D1AEFC20099FC52 /* HCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 079704A41D1AEFC20099FC52 /* HCViewController.m */; };
-		079704A91D1AEFC20099FC52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079704A51D1AEFC20099FC52 /* LaunchScreen.storyboard */; };
-		079704AA1D1AEFC20099FC52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079704A61D1AEFC20099FC52 /* Main.storyboard */; };
 		079704B91D1AEFDA0099FC52 /* MapsClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 079704B01D1AEFDA0099FC52 /* MapsClient.m */; };
 		079704BA1D1AEFDA0099FC52 /* MapsClientResources.m in Sources */ = {isa = PBXBuildFile; fileRef = 079704B21D1AEFDA0099FC52 /* MapsClientResources.m */; };
 		079704BB1D1AEFDA0099FC52 /* MapsAddressRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 079704B51D1AEFDA0099FC52 /* MapsAddressRequest.m */; };
 		079704BC1D1AEFDA0099FC52 /* MapsAddressResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 079704B81D1AEFDA0099FC52 /* MapsAddressResponse.m */; };
 		229158386FB229B10B47026B /* Pods_HCNetwork_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92858E80A796D6FA1970B45F /* Pods_HCNetwork_Tests.framework */; };
-		2BD3981C76B1E48055B43065 /* Pods_HCNetwork_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39CB475BBF0B50C0C5FAF327 /* Pods_HCNetwork_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
-		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -41,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		077FF8E31D1AF4AB00310781 /* Pods_HCNetwork_Example.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_HCNetwork_Example.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/HCNetwork-cpiozjvzkplgwzfwzdqfbkpfsfwk/Build/Products/Debug-iphonesimulator/Pods_HCNetwork_Example.framework"; sourceTree = "<group>"; };
 		079704A11D1AEFC20099FC52 /* HCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HCAppDelegate.h; path = HCNetwork/HCAppDelegate.h; sourceTree = SOURCE_ROOT; };
 		079704A21D1AEFC20099FC52 /* HCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HCAppDelegate.m; path = HCNetwork/HCAppDelegate.m; sourceTree = SOURCE_ROOT; };
 		079704A31D1AEFC20099FC52 /* HCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HCViewController.h; path = HCNetwork/HCViewController.h; sourceTree = SOURCE_ROOT; };
@@ -86,10 +87,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				077FF8E41D1AF4AB00310781 /* Pods_HCNetwork_Example.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				2BD3981C76B1E48055B43065 /* Pods_HCNetwork_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
-				6003F593195388D20070C39A /* Example for LibSpirNetworking */,
+				6003F593195388D20070C39A /* Example for HCNetwork */,
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
@@ -182,6 +183,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				077FF8E31D1AF4AB00310781 /* Pods_HCNetwork_Example.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -192,7 +194,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6003F593195388D20070C39A /* Example for LibSpirNetworking */ = {
+		6003F593195388D20070C39A /* Example for HCNetwork */ = {
 			isa = PBXGroup;
 			children = (
 				079704A11D1AEFC20099FC52 /* HCAppDelegate.h */,
@@ -205,7 +207,7 @@
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
-			name = "Example for LibSpirNetworking";
+			name = "Example for HCNetwork";
 			path = LibSpirNetworking;
 			sourceTree = "<group>";
 		};
@@ -332,10 +334,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				079704A91D1AEFC20099FC52 /* LaunchScreen.storyboard in Resources */,
-				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
-				079704AA1D1AEFC20099FC52 /* Main.storyboard in Resources */,
+				077FF8E51D1AF4D000310781 /* LaunchScreen.storyboard in Resources */,
+				077FF8E61D1AF4D000310781 /* Main.storyboard in Resources */,
+				077FF8E71D1AF4D000310781 /* Images.xcassets in Resources */,
+				077FF8E81D1AF4D000310781 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,7 +451,7 @@
 			files = (
 				079704A81D1AEFC20099FC52 /* HCViewController.m in Sources */,
 				079704BA1D1AEFDA0099FC52 /* MapsClientResources.m in Sources */,
-				079704A01D1AEF4B0099FC52 /* main.m in Sources */,
+				077FF8E21D1AF49100310781 /* main.m in Sources */,
 				079704A71D1AEFC20099FC52 /* HCAppDelegate.m in Sources */,
 				079704B91D1AEFDA0099FC52 /* MapsClient.m in Sources */,
 				079704BB1D1AEFDA0099FC52 /* MapsAddressRequest.m in Sources */,
