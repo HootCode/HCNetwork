@@ -1,9 +1,9 @@
-# LibSpirNetworking
+# HCNetworking
 
-[![CI Status](http://img.shields.io/travis/Julien Goudet/LibSpirNetworking.svg?style=flat)](https://travis-ci.org/Julien Goudet/LibSpirNetworking)
-[![Version](https://img.shields.io/cocoapods/v/LibSpirNetworking.svg?style=flat)](http://cocoapods.org/pods/LibSpirNetworking)
-[![License](https://img.shields.io/cocoapods/l/LibSpirNetworking.svg?style=flat)](http://cocoapods.org/pods/LibSpirNetworking)
-[![Platform](https://img.shields.io/cocoapods/p/LibSpirNetworking.svg?style=flat)](http://cocoapods.org/pods/LibSpirNetworking)
+[![CI Status](http://img.shields.io/travis/Julien Goudet/HCNetworking.svg?style=flat)](https://travis-ci.org/Julien Goudet/HCNetworking)
+[![Version](https://img.shields.io/cocoapods/v/HCNetworking.svg?style=flat)](http://cocoapods.org/pods/HCNetworking)
+[![License](https://img.shields.io/cocoapods/l/HCNetworking.svg?style=flat)](http://cocoapods.org/pods/HCNetworking)
+[![Platform](https://img.shields.io/cocoapods/p/HCNetworking.svg?style=flat)](http://cocoapods.org/pods/HCNetworking)
 
 ## Usage
 
@@ -13,22 +13,22 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-LibSpirNetworking is available through [CocoaPods](http://cocoapods.org). To install
+HCNetworking is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following lines to your Podfile:
 
     
     # Add external source
-    source 'http://bitbucket.spir.fr/scm/pods/internalspecs.git'
+    source 'https://github.com/HootCode/HCNetwork.git'
 
     # Add repo
-    pod "LibSpirNetworking"
+    pod "HCNetwork"
 
 
 
 ## Author
 
-Julien Goudet, jgoudet@spir.fr
+Julien Goudet, juliengdt@icloud.com
 
 ## License
 
-LibSpirNetworking is under SPIR Communication license. See the LICENSE file for more info.
+HCNetworking is under Hootcode license. See the LICENSE file for more info.

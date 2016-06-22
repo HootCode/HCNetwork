@@ -10,21 +10,32 @@ platform :ios, '9.0'
 use_frameworks!
 
 
-target 'LibSpirNetworking_Example', :exclusive => true do
-   
-    # Public pods
+def public_pods
     pod "AFNetworking"
     pod "JSONModel", '~>1.1.2'
     pod "OHHTTPStubs"
     pod "FormatterKit"
-    
-    # Dev repos
-    pod "LibSpirNetworking", :path => "../"
+end
+
+def dev_pods
+    pod "HCNetwork", :path => "../"
 
 end
 
-target 'LibSpirNetworking_Tests', :exclusive => true do
-  
-  pod "LibSpirNetworking", :path => "../"
+target 'HCNetwork_Example' do
+    	public_pods
+	dev_pods
+end
 
+target 'HCNetwork_Tests' do
+    	public_pods
+	dev_pods
+end
+
+post_install do |installer_representation|
+    installer_representation.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
+        end
+    end
 end

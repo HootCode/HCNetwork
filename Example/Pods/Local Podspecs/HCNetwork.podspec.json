@@ -1,0 +1,44 @@
+{
+  "name": "HCNetwork",
+  "version": "0.1.15",
+  "summary": "AFNetworking + JSONModel + Hootcode + <3 = HCetworking",
+  "description": "HCetworking is a mid-high level framework for dealing with\nAFNetworking and JSONModel. It allows you to use POST, GET, DELETE and PUT request methods,\nmock them and even add your own overlay on it.",
+  "homepage": "https://github.com/HootCode/HCNetwork",
+  "license": {
+    "type": "Julien GOUDET",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Julien Goudet": "juliengdt@icloud.com"
+  },
+  "source": {
+    "git": "https://github.com/HootCode/HCNetwork",
+    "tag": "0.1.15"
+  },
+  "social_media_url": "https://twitter.com/jlngdt",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "prefix_header_contents": "#define NEEDSTUB [[[NSBundle mainBundle] infoDictionary] valueForKey:@\"Stub\"]",
+  "public_header_files": "Pod/Classes/**/*.h",
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "dependencies": {
+    "AFNetworking": [
+      "~>2.0"
+    ],
+    "JSONModel": [
+
+    ],
+    "OHHTTPStubs": [
+
+    ],
+    "FormatterKit": [
+
+    ]
+  }
+}

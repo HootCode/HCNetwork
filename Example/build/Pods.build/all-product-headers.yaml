@@ -4,401 +4,401 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/build/Debug-iphonesimulator/AFNetworking.framework/Headers",
+      'name': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/build/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "AFHTTPRequestOperation.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.h"
         },
         {
           'type': 'file',
           'name': "AFHTTPRequestOperationManager.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperationManager.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperationManager.h"
         },
         {
           'type': 'file',
           'name': "AFHTTPSessionManager.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/AFNetworking/AFNetworking/AFHTTPSessionManager.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/AFNetworking/AFNetworking/AFHTTPSessionManager.h"
         },
         {
           'type': 'file',
           'name': "AFNetworkActivityIndicatorManager.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/AFNetworking/UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/AFNetworking/UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"
         },
         {
           'type': 'file',
           'name': "AFNetworkReachabilityManager.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h"
         },
         {
           'type': 'file',
           'name': "AFNetworking-Swift.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/build/Debug-iphonesimulator/AFNetworking.framework/Headers/AFNetworking-Swift.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/build/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworking-Swift.h"
         },
         {
           'type': 'file',
           'name': "AFNetworking-umbrella.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/Target Support Files/AFNetworking/AFNetworking-umbrella.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/Target Support Files/AFNetworking/AFNetworking-umbrella.h"
         },
         {
           'type': 'file',
           'name': "AFNetworking.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/AFNetworking/AFNetworking/AFNetworking.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/AFNetworking/AFNetworking/AFNetworking.h"
         },
         {
           'type': 'file',
           'name': "AFSecurityPolicy.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h"
         },
         {
           'type': 'file',
           'name': "AFURLConnectionOperation.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.h"
         },
         {
           'type': 'file',
           'name': "AFURLRequestSerialization.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.h"
         },
         {
           'type': 'file',
           'name': "AFURLResponseSerialization.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h"
         },
         {
           'type': 'file',
           'name': "AFURLSessionManager.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/AFNetworking/AFNetworking/AFURLSessionManager.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/AFNetworking/AFNetworking/AFURLSessionManager.h"
         },
         {
           'type': 'file',
           'name': "UIActivityIndicatorView+AFNetworking.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/AFNetworking/UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/AFNetworking/UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"
         },
         {
           'type': 'file',
           'name': "UIAlertView+AFNetworking.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/AFNetworking/UIKit+AFNetworking/UIAlertView+AFNetworking.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/AFNetworking/UIKit+AFNetworking/UIAlertView+AFNetworking.h"
         },
         {
           'type': 'file',
           'name': "UIButton+AFNetworking.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/AFNetworking/UIKit+AFNetworking/UIButton+AFNetworking.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/AFNetworking/UIKit+AFNetworking/UIButton+AFNetworking.h"
         },
         {
           'type': 'file',
           'name': "UIImage+AFNetworking.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/AFNetworking/UIKit+AFNetworking/UIImage+AFNetworking.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/AFNetworking/UIKit+AFNetworking/UIImage+AFNetworking.h"
         },
         {
           'type': 'file',
           'name': "UIImageView+AFNetworking.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/AFNetworking/UIKit+AFNetworking/UIImageView+AFNetworking.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/AFNetworking/UIKit+AFNetworking/UIImageView+AFNetworking.h"
         },
         {
           'type': 'file',
           'name': "UIKit+AFNetworking.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/AFNetworking/UIKit+AFNetworking/UIKit+AFNetworking.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/AFNetworking/UIKit+AFNetworking/UIKit+AFNetworking.h"
         },
         {
           'type': 'file',
           'name': "UIProgressView+AFNetworking.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/AFNetworking/UIKit+AFNetworking/UIProgressView+AFNetworking.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/AFNetworking/UIKit+AFNetworking/UIProgressView+AFNetworking.h"
         },
         {
           'type': 'file',
           'name': "UIRefreshControl+AFNetworking.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/AFNetworking/UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/AFNetworking/UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"
         },
         {
           'type': 'file',
           'name': "UIWebView+AFNetworking.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/AFNetworking/UIKit+AFNetworking/UIWebView+AFNetworking.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/AFNetworking/UIKit+AFNetworking/UIWebView+AFNetworking.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/build/Debug-iphonesimulator/AFNetworking.framework/Modules",
+      'name': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/build/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/build/Pods.build/Debug-iphonesimulator/AFNetworking.build/module.modulemap"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/build/Pods.build/Debug-iphonesimulator/AFNetworking.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/build/Debug-iphonesimulator/FormatterKit.framework/Headers",
+      'name': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/build/Debug-iphonesimulator/FormatterKit/FormatterKit.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "FormatterKit-Swift.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/build/Debug-iphonesimulator/FormatterKit.framework/Headers/FormatterKit-Swift.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/build/Debug-iphonesimulator/FormatterKit/FormatterKit.framework/Headers/FormatterKit-Swift.h"
         },
         {
           'type': 'file',
           'name': "FormatterKit-umbrella.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/Target Support Files/FormatterKit/FormatterKit-umbrella.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/Target Support Files/FormatterKit/FormatterKit-umbrella.h"
         },
         {
           'type': 'file',
           'name': "TTTAddressFormatter.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/FormatterKit/FormatterKit/TTTAddressFormatter.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/FormatterKit/FormatterKit/TTTAddressFormatter.h"
         },
         {
           'type': 'file',
           'name': "TTTArrayFormatter.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/FormatterKit/FormatterKit/TTTArrayFormatter.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/FormatterKit/FormatterKit/TTTArrayFormatter.h"
         },
         {
           'type': 'file',
           'name': "TTTColorFormatter.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/FormatterKit/FormatterKit/TTTColorFormatter.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/FormatterKit/FormatterKit/TTTColorFormatter.h"
         },
         {
           'type': 'file',
           'name': "TTTLocationFormatter.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/FormatterKit/FormatterKit/TTTLocationFormatter.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/FormatterKit/FormatterKit/TTTLocationFormatter.h"
         },
         {
           'type': 'file',
           'name': "TTTNameFormatter.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/FormatterKit/FormatterKit/TTTNameFormatter.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/FormatterKit/FormatterKit/TTTNameFormatter.h"
         },
         {
           'type': 'file',
           'name': "TTTOrdinalNumberFormatter.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/FormatterKit/FormatterKit/TTTOrdinalNumberFormatter.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/FormatterKit/FormatterKit/TTTOrdinalNumberFormatter.h"
         },
         {
           'type': 'file',
           'name': "TTTTimeIntervalFormatter.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/FormatterKit/FormatterKit/TTTTimeIntervalFormatter.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/FormatterKit/FormatterKit/TTTTimeIntervalFormatter.h"
         },
         {
           'type': 'file',
           'name': "TTTURLRequestFormatter.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/FormatterKit/FormatterKit/TTTURLRequestFormatter.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/FormatterKit/FormatterKit/TTTURLRequestFormatter.h"
         },
         {
           'type': 'file',
           'name': "TTTUnitOfInformationFormatter.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/FormatterKit/FormatterKit/TTTUnitOfInformationFormatter.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/FormatterKit/FormatterKit/TTTUnitOfInformationFormatter.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/build/Debug-iphonesimulator/FormatterKit.framework/Modules",
+      'name': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/build/Debug-iphonesimulator/FormatterKit/FormatterKit.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/build/Pods.build/Debug-iphonesimulator/FormatterKit.build/module.modulemap"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/build/Pods.build/Debug-iphonesimulator/FormatterKit.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/build/Debug-iphonesimulator/JSONModel.framework/Headers",
+      'name': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/build/Debug-iphonesimulator/HCNetwork/HCNetwork.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "HCBaseClient.h",
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Pod/Classes/HCBaseClient/HCBaseClient.h"
+        },
+        {
+          'type': 'file',
+          'name': "HCBaseRequest.h",
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Pod/Classes/HCBaseRequest/HCBaseRequest.h"
+        },
+        {
+          'type': 'file',
+          'name': "HCBaseResponse.h",
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Pod/Classes/HCBaseResponse/HCBaseResponse.h"
+        },
+        {
+          'type': 'file',
+          'name': "HCConstants.h",
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Pod/Classes/Constants/HCConstants.h"
+        },
+        {
+          'type': 'file',
+          'name': "HCCookieStore.h",
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Pod/Classes/HCCookieStore/HCCookieStore.h"
+        },
+        {
+          'type': 'file',
+          'name': "HCEnumerations.h",
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Pod/Classes/Enumerations/HCEnumerations.h"
+        },
+        {
+          'type': 'file',
+          'name': "HCError.h",
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Pod/Classes/HCError/HCError.h"
+        },
+        {
+          'type': 'file',
+          'name': "HCNetwork-Swift.h",
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/build/Debug-iphonesimulator/HCNetwork/HCNetwork.framework/Headers/HCNetwork-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "HCNetwork-umbrella.h",
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/Target Support Files/HCNetwork/HCNetwork-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "HCNetwork.h",
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Pod/Classes/HCNetwork.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/build/Debug-iphonesimulator/HCNetwork/HCNetwork.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/build/Pods.build/Debug-iphonesimulator/HCNetwork.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/build/Debug-iphonesimulator/JSONModel/JSONModel.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "JSONAPI.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/JSONModel/JSONModel/JSONModelNetworking/JSONAPI.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/JSONModel/JSONModel/JSONModelNetworking/JSONAPI.h"
         },
         {
           'type': 'file',
           'name': "JSONHTTPClient.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/JSONModel/JSONModel/JSONModelNetworking/JSONHTTPClient.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/JSONModel/JSONModel/JSONModelNetworking/JSONHTTPClient.h"
         },
         {
           'type': 'file',
           'name': "JSONKeyMapper.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/JSONModel/JSONModel/JSONModelTransformations/JSONKeyMapper.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/JSONModel/JSONModel/JSONModelTransformations/JSONKeyMapper.h"
         },
         {
           'type': 'file',
           'name': "JSONModel+networking.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/JSONModel/JSONModel/JSONModelNetworking/JSONModel+networking.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/JSONModel/JSONModel/JSONModelNetworking/JSONModel+networking.h"
         },
         {
           'type': 'file',
           'name': "JSONModel-Swift.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/build/Debug-iphonesimulator/JSONModel.framework/Headers/JSONModel-Swift.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/build/Debug-iphonesimulator/JSONModel/JSONModel.framework/Headers/JSONModel-Swift.h"
         },
         {
           'type': 'file',
           'name': "JSONModel-umbrella.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/Target Support Files/JSONModel/JSONModel-umbrella.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/Target Support Files/JSONModel/JSONModel-umbrella.h"
         },
         {
           'type': 'file',
           'name': "JSONModel.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/JSONModel/JSONModel/JSONModel/JSONModel.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/JSONModel/JSONModel/JSONModel/JSONModel.h"
         },
         {
           'type': 'file',
           'name': "JSONModelArray.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/JSONModel/JSONModel/JSONModel/JSONModelArray.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/JSONModel/JSONModel/JSONModel/JSONModelArray.h"
         },
         {
           'type': 'file',
           'name': "JSONModelClassProperty.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/JSONModel/JSONModel/JSONModel/JSONModelClassProperty.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/JSONModel/JSONModel/JSONModel/JSONModelClassProperty.h"
         },
         {
           'type': 'file',
           'name': "JSONModelError.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/JSONModel/JSONModel/JSONModel/JSONModelError.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/JSONModel/JSONModel/JSONModel/JSONModelError.h"
         },
         {
           'type': 'file',
           'name': "JSONModelLib.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/JSONModel/JSONModel/JSONModelLib.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/JSONModel/JSONModel/JSONModelLib.h"
         },
         {
           'type': 'file',
           'name': "JSONValueTransformer.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/JSONModel/JSONModel/JSONModelTransformations/JSONValueTransformer.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/JSONModel/JSONModel/JSONModelTransformations/JSONValueTransformer.h"
         },
         {
           'type': 'file',
           'name': "NSArray+JSONModel.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/JSONModel/JSONModel/JSONModelCategories/NSArray+JSONModel.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/JSONModel/JSONModel/JSONModelCategories/NSArray+JSONModel.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/build/Debug-iphonesimulator/JSONModel.framework/Modules",
+      'name': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/build/Debug-iphonesimulator/JSONModel/JSONModel.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/build/Pods.build/Debug-iphonesimulator/JSONModel.build/module.modulemap"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/build/Pods.build/Debug-iphonesimulator/JSONModel.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/build/Debug-iphonesimulator/LibSpirNetworking.framework/Headers",
-      'contents': [
-        {
-          'type': 'file',
-          'name': "LibSpirNetworking-Swift.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/build/Debug-iphonesimulator/LibSpirNetworking.framework/Headers/LibSpirNetworking-Swift.h"
-        },
-        {
-          'type': 'file',
-          'name': "LibSpirNetworking-umbrella.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/Target Support Files/LibSpirNetworking/LibSpirNetworking-umbrella.h"
-        },
-        {
-          'type': 'file',
-          'name': "LibSpirNetworking.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Pod/Classes/LibSpirNetworking.h"
-        },
-        {
-          'type': 'file',
-          'name': "SPNBaseClient.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Pod/Classes/SPNBaseClient/SPNBaseClient.h"
-        },
-        {
-          'type': 'file',
-          'name': "SPNBaseRequest.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Pod/Classes/SPNBaseRequest/SPNBaseRequest.h"
-        },
-        {
-          'type': 'file',
-          'name': "SPNBaseResponse.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Pod/Classes/SPNBaseResponse/SPNBaseResponse.h"
-        },
-        {
-          'type': 'file',
-          'name': "SPNConstants.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Pod/Classes/Constants/SPNConstants.h"
-        },
-        {
-          'type': 'file',
-          'name': "SPNCookieStore.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Pod/Classes/SPNCookieStore/SPNCookieStore.h"
-        },
-        {
-          'type': 'file',
-          'name': "SPNEnumerations.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Pod/Classes/Enumerations/SPNEnumerations.h"
-        },
-        {
-          'type': 'file',
-          'name': "SPNError.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Pod/Classes/SPNError/SPNError.h"
-        }
-      ]
-    },
-    {
-      'type': 'directory',
-      'name': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/build/Debug-iphonesimulator/LibSpirNetworking.framework/Modules",
-      'contents': [
-        {
-          'type': 'file',
-          'name': "module.modulemap",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/build/Pods.build/Debug-iphonesimulator/LibSpirNetworking.build/module.modulemap"
-        }
-      ]
-    },
-    {
-      'type': 'directory',
-      'name': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/build/Debug-iphonesimulator/OHHTTPStubs.framework/Headers",
+      'name': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/build/Debug-iphonesimulator/OHHTTPStubs/OHHTTPStubs.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Compatibility.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/OHHTTPStubs/OHHTTPStubs/Sources/Compatibility.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/OHHTTPStubs/OHHTTPStubs/Sources/Compatibility.h"
         },
         {
           'type': 'file',
           'name': "OHHTTPStubs-Swift.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/build/Debug-iphonesimulator/OHHTTPStubs.framework/Headers/OHHTTPStubs-Swift.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/build/Debug-iphonesimulator/OHHTTPStubs/OHHTTPStubs.framework/Headers/OHHTTPStubs-Swift.h"
         },
         {
           'type': 'file',
           'name': "OHHTTPStubs-umbrella.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/Target Support Files/OHHTTPStubs/OHHTTPStubs-umbrella.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/Target Support Files/OHHTTPStubs/OHHTTPStubs-umbrella.h"
         },
         {
           'type': 'file',
           'name': "OHHTTPStubs.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/OHHTTPStubs/OHHTTPStubs/Sources/OHHTTPStubs.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/OHHTTPStubs/OHHTTPStubs/Sources/OHHTTPStubs.h"
         },
         {
           'type': 'file',
           'name': "OHHTTPStubsResponse+JSON.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/OHHTTPStubs/OHHTTPStubs/Sources/JSON/OHHTTPStubsResponse+JSON.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/OHHTTPStubs/OHHTTPStubs/Sources/JSON/OHHTTPStubsResponse+JSON.h"
         },
         {
           'type': 'file',
           'name': "OHHTTPStubsResponse.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/OHHTTPStubs/OHHTTPStubs/Sources/OHHTTPStubsResponse.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/OHHTTPStubs/OHHTTPStubs/Sources/OHHTTPStubsResponse.h"
         },
         {
           'type': 'file',
           'name': "OHPathHelpers.h",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/Pods/OHHTTPStubs/OHHTTPStubs/Sources/OHPathHelpers/OHPathHelpers.h"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/Pods/OHHTTPStubs/OHHTTPStubs/Sources/OHPathHelpers/OHPathHelpers.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/build/Debug-iphonesimulator/OHHTTPStubs.framework/Modules",
+      'name': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/build/Debug-iphonesimulator/OHHTTPStubs/OHHTTPStubs.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/e0000749/Documents/Projects/lib-spir-networking/Example/build/Pods.build/Debug-iphonesimulator/OHHTTPStubs.build/module.modulemap"
+          'external-contents': "/Users/jgoudet/Documents/Projects/Development/hcnetwork/Example/build/Pods.build/Debug-iphonesimulator/OHHTTPStubs.build/module.modulemap"
         }
       ]
     }

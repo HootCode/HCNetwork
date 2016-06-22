@@ -39,12 +39,12 @@ PODS:
   - FormatterKit/TimeIntervalFormatter (1.8.0)
   - FormatterKit/UnitOfInformationFormatter (1.8.0)
   - FormatterKit/URLRequestFormatter (1.8.0)
-  - JSONModel (1.1.2)
-  - LibSpirNetworking (0.1.11):
+  - HCNetwork (0.1.15):
     - AFNetworking (~> 2.0)
     - FormatterKit
     - JSONModel
     - OHHTTPStubs
+  - JSONModel (1.1.2)
   - OHHTTPStubs (4.7.0):
     - OHHTTPStubs/Default (= 4.7.0)
   - OHHTTPStubs/Core (4.7.0)
@@ -62,19 +62,21 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - FormatterKit
+  - HCNetwork (from `../`)
   - JSONModel (~> 1.1.2)
-  - LibSpirNetworking (from `../`)
   - OHHTTPStubs
 
 EXTERNAL SOURCES:
-  LibSpirNetworking:
-    :path: ../
+  HCNetwork:
+    :path: "../"
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   FormatterKit: bddde83e054edf9d9ee14f9de3b3a5103db256f4
+  HCNetwork: 1b72915f8d46627e8d7502d0a51717cbe4ce32b3
   JSONModel: 216584d0311b053ff714f1d6cb700dbf890847bc
-  LibSpirNetworking: c218a130c0898524b2a2d32df67e2f2df8f22843
   OHHTTPStubs: d2bf6a0f407620d67e75a1d3f12d86a2b1dd15c0
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 2ecd56479d0647761ab3c4eab651f807b2dd7e81
+
+COCOAPODS: 1.0.1

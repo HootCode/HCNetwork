@@ -1,1 +1,0 @@
- const unsigned char Pods_LibSpirNetworking_ExampleVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:Pods_LibSpirNetworking_Example  PROJECT:Pods-1" "\n"; const double Pods_LibSpirNetworking_ExampleVersionNumber __attribute__ ((used)) = (double)1.;

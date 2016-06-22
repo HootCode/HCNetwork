@@ -1,6 +1,0 @@
-framework module LibSpirNetworking {
-  umbrella header "LibSpirNetworking-umbrella.h"
-
-  export *
-  module * { export * }
-}
